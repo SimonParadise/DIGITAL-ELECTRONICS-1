@@ -11,9 +11,9 @@
 ```vhdl
 architecture dataflow of demorgan is
 begin
-    f_o      <= -- WRITE YOUR CODE HERE
-    f_nand_o <= -- WRITE YOUR CODE HERE
-    f_nor_o  <= -- WRITE YOUR CODE HERE
+    f_o      <= (not(b_i) and a_i) or (not(c_i) and not(b_i)); -- WRITE YOUR CODE HERE
+    f_nand_o <= (((b_i nand b_i) nand a_i) nand ((b_i nand b_i) nand (c_i nand c_i))); -- WRITE YOUR CODE HERE
+    f_nor_o  <= (((a_i nor a_i) nor b_i) nor (b_i nor c_i)) nor (((a_i nor a_i) nor b_i) nor (b_i nor c_i))-- WRITE YOUR CODE HERE
 end architecture dataflow;
 ```
 
@@ -21,14 +21,14 @@ end architecture dataflow;
 
 | **c** | **b** |**a** | **f(c,b,a)** | **f_NAND(c,b,a)** | **f_NOR(c,b,a)** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 |  |  |  |
-| 0 | 0 | 1 |  |  |  |
-| 0 | 1 | 0 |  |  |  |
-| 0 | 1 | 1 |  |  |  |
-| 1 | 0 | 0 |  |  |  |
-| 1 | 0 | 1 |  |  |  |
-| 1 | 1 | 0 |  |  |  |
-| 1 | 1 | 1 |  |  |  |
+| 0 | 0 | 0 | 1 | 1 | 1 |
+| 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 0 |
 
 ### Distributive laws
 
