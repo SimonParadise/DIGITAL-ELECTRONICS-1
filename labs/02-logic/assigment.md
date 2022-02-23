@@ -6,7 +6,7 @@
 
    B Greater than A:
 
-   ![K-maps](![k map B greater A final](https://user-images.githubusercontent.com/99410540/155278408-24b752f8-9963-453d-8890-ee61d3ec975f.jpg))
+   ![k map B greater A final](https://user-images.githubusercontent.com/99410540/155278408-24b752f8-9963-453d-8890-ee61d3ec975f.jpg)
 
 
    B Less than A:
