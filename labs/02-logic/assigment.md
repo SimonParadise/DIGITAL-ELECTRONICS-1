@@ -10,8 +10,9 @@
 
 
    B Less than A:
+   ![K map B less A final](https://user-images.githubusercontent.com/99410540/155278572-6efd14b1-bcb8-4e5a-a07d-075a1b42fc60.jpg)
 
-   ![K-maps](images/kmap_empty.png)
+   
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
