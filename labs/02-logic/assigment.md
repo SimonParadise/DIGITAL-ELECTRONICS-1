@@ -36,15 +36,19 @@
         report "Stimulus process started" severity note;
 
         -- First test case
-        s_b <= "BCD_OF_YOUR_SECOND_LAST_ID_DIGIT"; -- Such as "0101" if ID = xxxx56
-        s_a <= "BCD_OF_YOUR_LAST_ID_DIGIT";        -- Such as "0110" if ID = xxxx56
+        s_b <= "0001"; -- Such as "0001" if ID = xxxx12
+        s_a <= "0010"; -- Such as "0010" if ID = xxxx12
+        wait for 100 ns;
+        -- Second test case
+        s_b <= "0100"; 
+        s_a <= "0010"; 
         wait for 100 ns;
         -- Expected output
-        assert ((s_B_greater_A = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_equals_A  = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_less_A    = 'WRITE_CORRECT_VALUE_HERE'))
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '0') and
+                (s_B_less_A    = '1'))
         -- If false, then report an error
-        report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
+        report "Input combination of secind test case FAILED" severity error;
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
@@ -53,10 +57,12 @@
 ```
 
 2. Text console screenshot during your simulation, including reports.
+![4  bit comparator](https://user-images.githubusercontent.com/99410540/155400903-35bb7264-c7e7-4e9d-a581-40052a742f63.png)
 
-   ![your figure]()
+![4 bit comparator code](https://user-images.githubusercontent.com/99410540/155400922-03e63d70-cd94-4abd-b564-b5d5de775fdc.png)
+
 
 3. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   [https://www.edaplayground.com/...](https://www.edaplayground.com/x/bCcT)
 
