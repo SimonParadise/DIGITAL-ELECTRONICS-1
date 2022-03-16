@@ -90,4 +90,5 @@ end architecture testbench;
 
 1. Image of the shift register `top` level schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
 
-   ![your figure]()
+  ![275699173_3156403961345791_8667024105038523641_n](https://user-images.githubusercontent.com/99410540/158694031-1e237158-1f5e-46b4-b7ec-2065baba8719.jpg)
+
