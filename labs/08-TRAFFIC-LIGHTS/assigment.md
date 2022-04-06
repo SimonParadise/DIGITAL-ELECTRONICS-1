@@ -108,4 +108,8 @@
 
 3. Screenshot with simulated time waveforms. The full functionality of the entity must be verified. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-  8 TRAFFIC LIGHTS.png
+
+![8 TRAFFIC LIGHTS](https://user-images.githubusercontent.com/99410540/162063493-638eeb32-89af-4224-9403-f03ddc5986f9.png)
+
+ 
+ 
